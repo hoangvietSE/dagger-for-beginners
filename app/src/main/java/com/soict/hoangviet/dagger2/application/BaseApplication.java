@@ -5,8 +5,6 @@ import android.app.Application;
 import com.soict.hoangviet.dagger2.di.component.AppComponent;
 import com.soict.hoangviet.dagger2.di.component.DaggerAppComponent;
 import com.soict.hoangviet.dagger2.di.module.AppModule;
-import com.soict.hoangviet.dagger2.di.module.ReceiverModule;
-import com.soict.hoangviet.dagger2.di.module.UtilsModule;
 
 public class BaseApplication extends Application {
 

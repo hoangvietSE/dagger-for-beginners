@@ -1,6 +1,6 @@
 package com.soict.hoangviet.dagger2.di.module;
 
-import com.soict.hoangviet.dagger2.custom.NetworkChannel;
+import com.soict.hoangviet.dagger2.data.network.NetworkChannel;
 
 import dagger.Module;
 import dagger.Provides;

@@ -1,4 +1,4 @@
-package com.soict.hoangviet.dagger2.custom;
+package com.soict.hoangviet.dagger2.data.network;
 
 import android.util.Log;
 

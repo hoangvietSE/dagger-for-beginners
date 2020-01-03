@@ -2,9 +2,7 @@ package com.soict.hoangviet.dagger2.utils;
 
 import android.content.Context;
 
-import com.soict.hoangviet.dagger2.custom.NetworkChannel;
-
-import javax.inject.Inject;
+import com.soict.hoangviet.dagger2.data.network.NetworkChannel;
 
 public class NetworkUtil {
     private Context context;
