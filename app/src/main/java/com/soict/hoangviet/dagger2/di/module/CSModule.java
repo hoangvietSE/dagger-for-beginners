@@ -7,6 +7,8 @@ import com.soict.hoangviet.dagger2.data.network.ICSPresenter;
 import com.soict.hoangviet.dagger2.data.network.IChatInteractor;
 import com.soict.hoangviet.dagger2.di.ChatScreenScope;
 
+import javax.inject.Named;
+
 import dagger.Module;
 import dagger.Provides;
 

@@ -13,7 +13,10 @@ import com.soict.hoangviet.dagger2.di.component.ChatComponent;
 import com.soict.hoangviet.dagger2.di.component.DaggerCSComponent;
 import com.soict.hoangviet.dagger2.di.component.DaggerChatComponent;
 
+import java.util.concurrent.Executor;
+
 import javax.inject.Inject;
+import javax.inject.Named;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +28,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Inject
     ICSPresenter presenter;
+
+    @Inject
+    @Named("BaseUrl")
+    String baseUrl;
+
+    @Inject
+    @Named("AppVersion")
+    String appVersion;
+
 
 
     @Override

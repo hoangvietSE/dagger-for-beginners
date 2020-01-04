@@ -10,6 +10,12 @@ import com.soict.hoangviet.dagger2.data.network.IDataRepository;
 import com.soict.hoangviet.dagger2.di.ChatScope;
 import com.soict.hoangviet.dagger2.utils.RxUtilsAbs;
 
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+
+import javax.inject.Named;
+import javax.inject.Singleton;
+
 import dagger.Module;
 import dagger.Provides;
 

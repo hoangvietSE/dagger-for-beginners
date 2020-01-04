@@ -11,6 +11,9 @@ import com.soict.hoangviet.dagger2.ui.MainActivity;
 import com.soict.hoangviet.dagger2.utils.NetworkUtil;
 import com.soict.hoangviet.dagger2.utils.RxUtilsAbs;
 
+import java.util.concurrent.Executor;
+
+import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.Component;
@@ -30,5 +33,11 @@ public interface AppComponent {
     NetworkUtil networkUtil();
 
     IDataRepository iDataRepository();
+
+    @Named("BaseUrl")
+    String baseUrl();
+
+    @Named("AppVersion")
+    String appVersion();
 
 }
