@@ -21,8 +21,8 @@ public class BaseApplication extends Application {
     }
 
     private AppComponent buildComponent() {
-        return DaggerAppComponent.builder().
-                appModule(new AppModule(this))
+        return DaggerAppComponent.builder()
+                .application(this)
                 .build();
     }
 }

@@ -1,5 +1,6 @@
 package com.soict.hoangviet.dagger2.di.component;
 
+import android.app.Application;
 import android.content.Context;
 
 import com.soict.hoangviet.dagger2.data.network.IDataRepository;
@@ -16,6 +17,7 @@ import java.util.concurrent.Executor;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
+import dagger.BindsInstance;
 import dagger.Component;
 
 @Component(modules = {
@@ -40,4 +42,11 @@ public interface AppComponent {
     @Named("AppVersion")
     String appVersion();
 
+    @Component.Builder
+    interface Builder{
+        @BindsInstance
+        Builder application(Application application);
+
+        AppComponent build();
+    }
 }
